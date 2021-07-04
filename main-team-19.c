@@ -267,8 +267,8 @@ int main(int argc, char *argv[])
 
       if((strcmp(avancar, "\0") == 0))
       {
-            enter = 1;
-            cleanConsole();
+        enter = 1;
+        cleanConsole();
       }
       else 
         enter = 0;
