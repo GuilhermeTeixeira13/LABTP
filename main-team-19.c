@@ -62,6 +62,8 @@ int main(int argc, char *argv[])
     }
   }
   printf("\n");
+
+
   /* ↓ Enquanto a opção escolhida não for sair, o programa vai estar sempre a mostrar o menu e a executar funcionalidades. ↓ */
   opcao_menu = menu();
   while(opcao_menu != 12) 
@@ -71,6 +73,7 @@ int main(int argc, char *argv[])
     {
     case 1:
       printf(" OPÇÃO %d: MATRIZ 16X2 - (1ªLINHA = VETOR INICIAL / 2ªLINHA = 4 X 1ªLINHA)\n\n", opcao_menu);
+
       /* ↓ Organiza os números na forma de matriz. ↓ */
       matriz16x2(array_utilizador, array16x2);
       for(linha=0; linha<=1; linha++)
@@ -87,6 +90,7 @@ int main(int argc, char *argv[])
     case 3:
       ordemCrescente(array_utilizador, array_crescente, 16);
       printf(" OPÇÃO %d: VETOR INICIAL ORDENADO POR ORDEM CRESCENTE\n\n", opcao_menu);
+
       /* ↓ Organiza os números na forma de vetor. ↓ */
       printf(" (");
       for(coluna=0; coluna<16; coluna++)
@@ -102,6 +106,7 @@ int main(int argc, char *argv[])
       intToFloat(array_utilizador, array_utilizador_float, 16);
       div2(array_utilizador_float, array_dividido, 16);
       printf(" OPÇÃO %d: DIVISÃO DE ELEMENTOS POR 2\n\n", opcao_menu);
+
       /* ↓ Organiza os números na forma de vetor. ↓ */
       printf(" (");
       for(coluna=0; coluna<16; coluna++)
@@ -116,6 +121,7 @@ int main(int argc, char *argv[])
     case 5:
       ultima_pos = numsDiv3(array_utilizador, array_multiplos3, 16);
       printf(" OPÇÃO %d: ELEMENTOS DIVISÍVEIS POR 3\n\n", opcao_menu);
+
       /* ↓ Organiza os números na forma de vetor. ↓ */
       if(ultima_pos == -2)
         printf("Não existem elementos divisíveis por 3, no array digitado.\n");
@@ -148,6 +154,7 @@ int main(int argc, char *argv[])
       break;
     case 7:
       printf(" OPÇÃO %d: LEITURA DE NOVO VETOR E DEVOLUÇÃO DO PRODUTO INTERNO\n\n", opcao_menu);
+
       /* ↓ Pede 16 números sem restrições. ↓ */
       for(i=0; i<16; i++)
       {
@@ -162,12 +169,15 @@ int main(int argc, char *argv[])
         }
       }
       printf("\n");
+
+      /* ↓ Calcula-se e mostra-se o valor do PI ↓ */
       int pi = produtoInterno(array_utilizador, novo_array, 16);
       printf("O produto inteiro do vetor inicial com o novo vetor digitado é: %d\n", pi);
       break;
     case 8:
       pos_ultimpo_primo = numsPrimos(array_utilizador, array_primos, 16);
       printf(" OPÇÃO %d: IDENTIFICAÇÃO DOS NÚMEROS PRIMOS DO VETOR INICIAL\n\n", opcao_menu);
+
       /* ↓ Organiza os números na forma de vetor. ↓ */
       printf(" (");
       for(coluna=0; coluna<16; coluna++)
@@ -185,6 +195,7 @@ int main(int argc, char *argv[])
       matrix16x16(matrix16, array_utilizador, array_crescente);
       printf(" OPÇÃO %d: MATRIZ 16X16 - PRODUTO DO VETOR INICIAL COM ELE MESMO ORDENADO POR ORDEM CRESCENTE\n", opcao_menu);
       printf("\n");
+      
       /* ↓ Organiza os números na forma de matriz. ↓ */
       for(linha=0; linha<16; linha++)
       { 
