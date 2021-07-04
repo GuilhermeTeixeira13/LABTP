@@ -8,8 +8,8 @@ todos na mesma directoria.
 NOTA:
 Para ter acesso à documentação gerada basta abrir o ficheiro "index" da pasta "html".
 
-Este projeto consiste na elaboração do código de um programa com Makefile, junto da documentação gerada a partir do código HyperText Markup Language (HTML), relatório técnico e uma apresentação/defesa oral para a Unidade Curricular (UC) de Laboratórios de Programação, da Universidade da Beira Interior (UBI).
-A abordagem a este problema possibilita, essecialmente, uma melhor consolidação dos conteúdos programáticos da cadeira em questão.
+ Este projeto consiste na elaboração do código de um programa com Makefile, junto da documentação gerada a partir do código HyperText Markup Language (HTML), relatório técnico e uma apresentação/defesa oral para a Unidade Curricular (UC) de Laboratórios de Programação, da Universidade da Beira Interior (UBI).
+ A abordagem a este problema possibilita, essecialmente, uma melhor consolidação dos conteúdos programáticos da cadeira em questão.
 
  O problema endereçado com este trabalho passa por implementar um programa que peça ao utilizador 16 números inteiros e os guarda num vetor para posteriormente, providenciar forma de calcular algumas estatísticas ou fazer operações sobre esses valores.
  Os objetivos principais relacionam-se com a correta implementação dos conteúdos lecionados nas aulas, no todo do trabalho (boas práticas de programação, Makefile otimizado, documentação gerada a partir do código HTML, elaboração de um relatório técnico em LATEX).
