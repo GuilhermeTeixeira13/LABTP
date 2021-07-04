@@ -7,6 +7,15 @@
 
 #include<stdio.h>
 #include<math.h>
+#include <stdlib.h>
+
+/**
+ * Função que limpa a consola.
+*/
+void cleanConsole()
+{
+    system("clear");
+}
 
 /**
  * Função que limpa o stdin.

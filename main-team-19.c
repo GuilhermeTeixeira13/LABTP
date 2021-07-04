@@ -30,9 +30,10 @@ int main(int argc, char *argv[])
   }
 
   /* ↓ Declaração de variáveis. ↓ */
-  int array_utilizador[16], i=0, j=0, opcao_menu, linha, coluna, array16x2[2][16], array_crescente[16], array_multiplos3[16], ultima_pos, novo_array[16];
+  int array_utilizador[16], i=0, j=0, opcao_menu, linha, coluna, array16x2[2][16], array_crescente[16], array_multiplos3[16], ultima_pos, novo_array[16], enter = 0;
   int array_primos[16]={}, pos_ultimpo_primo=0, matrix16[16][16], ha_zeros=0, ha_repetidos=0, determinante=0, contador_zeros=0, mult_DP=0, contador_multiplicacoes=0;
   float array_dividido[16], array_utilizador_float[16], matrix16_float[16][16];
+  char avancar[5], *pos;
 
   /* ↓ Introdução / Validação de números. ↓ */
   intro();
@@ -195,7 +196,7 @@ int main(int argc, char *argv[])
       matrix16x16(matrix16, array_utilizador, array_crescente);
       printf(" OPÇÃO %d: MATRIZ 16X16 - PRODUTO DO VETOR INICIAL COM ELE MESMO ORDENADO POR ORDEM CRESCENTE\n", opcao_menu);
       printf("\n");
-      
+
       /* ↓ Organiza os números na forma de matriz. ↓ */
       for(linha=0; linha<16; linha++)
       { 
@@ -255,6 +256,24 @@ int main(int argc, char *argv[])
       break; 
     }
     printf("\n");
+
+    limpaInput();
+    do
+    {
+      printf("PRESSIONE ENTER PARA AVANÇAR -> ");
+      fgets(avancar, 5, stdin);
+      pos = strchr(avancar, '\n');
+      *pos = '\0';
+
+      if((strcmp(avancar, "\0") == 0))
+      {
+        enter = 1;
+        cleanConsole();
+      }
+      else 
+        enter = 0;
+    }while(enter == 0);
+
     opcao_menu = menu();
   }
   printf("\n\t\t OBRIGADO POR USUFRUIR DO NOSSO PROGRAMA!\n\n");
