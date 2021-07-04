@@ -1,0 +1,35 @@
+\hypertarget{main-team-19_8c}{}\doxysection{main-\/team-\/19.c File Reference}
+\label{main-team-19_8c}\index{main-\/team-\/19.c@{main-\/team-\/19.c}}
+
+
+Este programa oferece ao usuário um M\+E\+NU com diversas funcionalidades. Para mais informações ler R\+E\+A\+D\+M\+E.\+txt.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}functions-\/team-\/19.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for main-\/team-\/19.c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main-team-19_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main-team-19_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Este programa oferece ao usuário um M\+E\+NU com diversas funcionalidades. Para mais informações ler R\+E\+A\+D\+M\+E.\+txt. 
+
+
+\begin{DoxyItemize}
+\item F\+I\+C\+H\+E\+I\+RO P\+R\+I\+N\+C\+I\+P\+AL -\/ C\+O\+R\+PO DO P\+R\+O\+G\+R\+A\+MA \begin{DoxyAuthor}{Author}
+Guilherme Teixeira / Guilherme Nunes / João Martins / Tiago Ribeiro / Henrique Policarpo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\end{DoxyItemize}
