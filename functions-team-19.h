@@ -5,6 +5,7 @@
  * @version 1.0.
  */
 
+void cleanConsole();
 void limpaInput();
 void helpflag();
 void separacao();
