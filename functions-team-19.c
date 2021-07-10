@@ -422,7 +422,7 @@ int verificaNumsIguais(float *matriz, int n)
  */
 int verificaZeros(float *matriz, int n)
 {
-  int colunas, i, zeros=0;
+  int colunas, zeros=0;
 
   for(colunas=0; colunas<n && zeros==0; colunas++) 
   {
@@ -442,7 +442,7 @@ int verificaZeros(float *matriz, int n)
  */
 void condensa(float matriz[16][16])
 {
-  int coluna=0, linha, c, l;
+  int coluna=0, linha, c;
   float linha_nova[16][16];
 
   for(linha=1; linha<16; linha++)

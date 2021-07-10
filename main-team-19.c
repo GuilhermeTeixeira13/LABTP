@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
   /* ↓ Declaração de variáveis. ↓ */
   int array_utilizador[16], i=0, j=0, opcao_menu, linha, coluna, array16x2[2][16], array_crescente[16], array_multiplos3[16], ultima_pos, novo_array[16], enter = 0;
-  int array_primos[16]={}, pos_ultimpo_primo=0, matrix16[16][16], ha_zeros=0, ha_repetidos=0, determinante=0, contador_zeros=0, mult_DP=0, contador_multiplicacoes=0;
+  int array_primos[16]={}, pos_ultimpo_primo=0, matrix16[16][16], ha_zeros=0, ha_repetidos=0, contador_zeros=0, mult_DP=0, contador_multiplicacoes=0;
   float array_dividido[16], array_utilizador_float[16], matrix16_float[16][16];
   char avancar[5], *pos;
 
@@ -132,10 +132,12 @@ int main(int argc, char *argv[])
         for(coluna=0; coluna<16; coluna++)
         {
           if(array_multiplos3[coluna] != 0)
+          {
             if(coluna!=ultima_pos)
               printf("%d, ", array_multiplos3[coluna]);  
             else
               printf("%d)", array_multiplos3[coluna]);
+          }
         }
       }
       printf("\n");
@@ -184,10 +186,12 @@ int main(int argc, char *argv[])
       for(coluna=0; coluna<16; coluna++)
       {
         if(array_primos[coluna] != 0)
+        {
           if(coluna != pos_ultimpo_primo)
             printf("%d, ", array_primos[coluna]);
           else
             printf("%d)", array_primos[coluna]);
+        }
       }
       printf("\n");
       break;
@@ -238,7 +242,6 @@ int main(int argc, char *argv[])
               if(linha == coluna)
               {
                 mult_DP = mult_DP * matrix16_float[linha][coluna];
-                determinante = mult_DP;
                 contador_multiplicacoes++;
               }
             }
